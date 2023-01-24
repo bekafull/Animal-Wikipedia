@@ -1,0 +1,226 @@
+/* Global Styles */
+:root {
+  --b-color: #1EABCA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  background: linear-gradient(94.1deg, #E41616 37.85%, #E76C0E 99.2%);
+  border-radius: 30px !important;
+  outline: none;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px !important;
+  text-align: center;
+  color: #fff;
+  padding: 10px 50px;
+  margin-top: 20px !important;
+}
+
+/* Getting Started Page */
+
+main {
+  text-align: center !important;
+  background: url(./Images/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+main .container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main h1 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: #fff;
+  text-shadow: 4px 4px 5px #333;
+}
+
+main .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .info h2 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 4px 4px 5px #333;
+}
+
+/* Navbar */
+
+nav {
+  margin-top: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .logo h1 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 30px;
+  color: var(--b-color);
+}
+
+nav .logo i {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--b-color);
+}
+
+nav input {
+  margin-top: 20px;
+  max-width: 650px;
+}
+
+/* Cards */
+.animCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 650px;
+  margin: 30px auto;
+  background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  padding: 20px;
+  border-radius: 8px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.animCard:hover {
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+
+.animCard h2 {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.animCard h4 {
+  color: #ddd;
+}
+
+.animCard img {
+  object-fit: contain;
+  width: 320px;
+  height: 220px;
+}
+
+/* Animal Info */
+
+.back{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 30px;
+  color: var(--b-color);
+}
+
+.animal {
+  display: grid;
+  place-items: center;
+}
+
+.animal .img {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+
+.animal .img img {
+  object-fit: contain;
+  width: 500px;
+  height: 480px;
+}
+
+.animal .text h1 {
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 30px;
+  background: linear-gradient(90.84deg, #E76C0E 28.88%, #7B61FF 86.35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animal .text p {
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 620px) {
+  main h1 {
+    font-size: 40px !important;
+  }
+
+  main h2 {
+    font-size: 30px !important;
+  }
+
+  .animCard{
+    height: 200px;
+  }
+
+  .animCard img {
+    width: 250px;
+    height: 150px;
+  }
+
+  .animCard h2 {
+    width: 150px;
+  }
+
+  .animal .img img {
+    width: 100%;
+    height: 350px;
+  }
+}
